@@ -1,55 +1,74 @@
-# Aplicativo de Criptografia de Dados
 
-Este é um aplicativo de criptografia de dados desenvolvido em Python utilizando a biblioteca `tkinter` para a interface gráfica e `cryptography.fernet` para a criptografia e descriptografia de arquivos.
+# 🔐 Aplicativo de Criptografia e Descriptografia de Arquivos
 
-## Funcionalidades
+Aplicativo desktop em **Python**, utilizando **Tkinter** para interface gráfica, e **cryptography** para garantir a **segurança de dados**.  
 
-- **Geração de Chave:** Gera uma chave de criptografia única para cada sessão.
-- **Criptografar Arquivos/Pastas:** Permite selecionar e criptografar arquivos ou pastas inteiras.
-- **Descriptografar Arquivos/Pastas:** Permite selecionar e descriptografar arquivos ou pastas previamente criptografados.
-- **Extensão Personalizada:** Permite definir a extensão dos arquivos criptografados.
+Permite **criptografar** e **descriptografar** arquivos e pastas, com extensão personalizada e **remoção automática** de arquivos originais após o processo.
 
-## Pré-requisitos
+---
 
-- Python 3.x
-- Biblioteca `cryptography`
-- Biblioteca `tkinter` (inclusa por padrão em Python)
+## 🚀 Funcionalidades
 
-## Instalação
+✅ Criptografia e descriptografia de arquivos e pastas.  
+✅ Geração de chave criptográfica com **Fernet**.  
+✅ Extensão personalizada para arquivos criptografados.  
+✅ Remoção automática do arquivo original após criptografia.  
+✅ Interface gráfica **amigável** e **intuitiva** com Tkinter.
 
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
-    ```
+---
 
-2. Instale as dependências:
-    ```bash
-    pip install cryptography
-    ```
+## 🛠️ Tecnologias utilizadas
 
-## Uso
+- **Python 3.x**  
+- **Tkinter** (interface gráfica)  
+- **cryptography** (Fernet)  
+- **os**, **filedialog**, **messagebox**
 
-1. Execute o aplicativo:
-    ```bash
-    python seu_arquivo.py
-    ```
+---
 
-2. Na interface gráfica:
-    - Gere uma chave de criptografia clicando no botão "Gerar Chave".
-    - Selecione um arquivo ou pasta para criptografar/descriptografar.
-    - Insira a extensão desejada para os arquivos criptografados (padrão é `.enc`).
-    - Clique em "Criptografar" para criptografar o arquivo/pasta.
-    - Clique em "Descriptografar" para descriptografar o arquivo/pasta.
+## ⚙️ Como usar
 
-## Estrutura do Código
+1. Clone o repositório:  
+```bash
+git clone https://github.com/marcelovalebr/criptografar-e-descriptografar-arquivos.git
+cd criptografar-e-descriptografar-arquivos
+```
 
-- `EncryptionApp`: Classe principal que gerencia a interface gráfica e as operações de criptografia e descriptografia.
-  - `create_widgets()`: Cria os elementos da interface gráfica.
-  - `generate_key()`: Gera uma chave de criptografia.
-  - `browse_file()`: Permite selecionar um arquivo.
-  - `browse_folder()`: Permite selecionar uma pasta.
-  - `encrypt()`: Criptografa o arquivo ou pasta selecionado.
-  - `decrypt()`: Descriptografa o arquivo ou pasta selecionado.
-  - `encrypt_file()`: Função auxiliar para criptografar um arquivo.
-  - `decrypt_file()`: Função auxiliar para descriptografar um arquivo.
+2. Instale as dependências:  
+```bash
+pip install cryptography
+```
+
+3. Execute a aplicação:  
+```bash
+python app.py
+```
+
+---
+
+## 🛡️ Aplicações práticas
+
+✅ Proteção de arquivos sensíveis.  
+✅ Automatização de processos de segurança.  
+✅ Solução para ambientes que exigem **criptografia forte**.  
+
+---
+
+## 👨‍💻 Autor
+
+**Marcelo Vale**  
+Especialista em Segurança da Informação | Automação de Processos | Infraestrutura Crítica  
+
+[GitHub](https://github.com/marcelovalebr) | [LinkedIn](https://www.linkedin.com/in/marcelovalebr/)
+
+---
+
+## 📝 Licença
+
+Este projeto está licenciado sob a **MIT License** — veja o arquivo **LICENSE** para mais detalhes.
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para **forkar** e sugerir melhorias.
